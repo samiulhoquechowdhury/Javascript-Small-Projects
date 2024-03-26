@@ -25,6 +25,8 @@ A simple age calculator web application built using HTML, CSS, and JavaScript. T
 ### Demo
 
 Include screenshots or GIFs of your application here.
+![Age Calculator Screenshot](age_calculator_screenshot.png)
+
 
 ## Alarm Clock
 
