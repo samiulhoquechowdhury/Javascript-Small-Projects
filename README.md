@@ -23,8 +23,6 @@ A simple age calculator web application built using HTML, CSS, and JavaScript. T
 3. Enter your birthdate and click the "Calculate Age" button to see your age.
 
 ### Demo
-
-Include screenshots or GIFs of your application here.
 ![age calculator](https://github.com/samiulhoquechowdhury/Javascript-Small-Projects/assets/120003213/09d2b4db-7bb8-4b3e-9f34-86b3165ffade)
 
 
