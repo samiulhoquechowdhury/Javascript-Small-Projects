@@ -5,7 +5,6 @@ var time, alarm, currentHour, currentMinute,
     
 sound.loop = true;
 
-// DISPLAY CURRENT TIME ON SCREEN
 function displayTime() {
     var now = new Date();
     time = now.toLocaleTimeString();
@@ -44,7 +43,7 @@ addValues(minutes);
 addValues(seconds);
 addHours(hours);
 
-// SET AND CLEAR ALARM
+// For setting and clearing alarm
 set.onclick = function () {
 
     //set
