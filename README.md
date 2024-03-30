@@ -48,7 +48,7 @@ This is a simple password strength checker web application built using HTML, CSS
 - Provides visual cues to indicate the strength level of the password.
 
 ## Demo
-
+I will update soon
 You can view a live demo of the password strength checker [here](#) (Replace "#" with the link to your demo).
 
 
