@@ -36,3 +36,23 @@ An alarm clock web application built using HTML, CSS, and JavaScript. This alarm
 
 Include screenshots or GIFs of your application here.
 
+# Password Strength Checker
+
+This is a simple password strength checker web application built using HTML, CSS, and JavaScript.
+
+## Features
+
+- Allows users to input a password and checks its strength.
+- Provides feedback on the strength of the password.
+- Password strength criteria include length, complexity, and diversity of characters.
+- Provides visual cues to indicate the strength level of the password.
+
+## Demo
+
+You can view a live demo of the password strength checker [here](#) (Replace "#" with the link to your demo).
+
+
+
+
+
+
