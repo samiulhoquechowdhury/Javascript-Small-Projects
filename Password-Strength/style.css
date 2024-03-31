@@ -32,7 +32,7 @@ input {
     color: white;
     text-transform: uppercase;
     cursor: pointer;
-    /* width: 100%; */
+    width: 100%;
   }
   
   
@@ -41,12 +41,10 @@ input {
     padding: 20px;
     width: 40%;
     border-radius: 10px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    width: 350px;
+
   }
-  
+
   .wrapper h1 {
     text-transform: uppercase;
     text-align: center;
