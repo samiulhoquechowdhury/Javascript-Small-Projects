@@ -1,19 +1,26 @@
 
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap");
+
+*{
+  box-sizing: border-box;
+}
 body{
   font-family: 'Poppins';
   display: flex;
   justify-content: center;
   margin-top: 50px;
+  
+  
 }
 form{
-  width: 300px;
+  width: 100%;
 }
 input {
+    justify-content: center;
     width: 100%;
     padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    border: 1px solid #e3dcdc;
+    border-radius: 5px;
     box-sizing: border-box;
     margin-top: 6px;
     margin-bottom: 16px;
@@ -25,6 +32,7 @@ input {
     color: white;
     text-transform: uppercase;
     cursor: pointer;
+    /* width: 100%; */
   }
   
   
@@ -32,12 +40,24 @@ input {
     background-color: #f1f1f1;
     padding: 20px;
     width: 40%;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  
+  .wrapper h1 {
+    text-transform: uppercase;
+    text-align: center;
+    color: #3f4a54;
+    text-decoration: underline;
   }
   
   
   #message {
     display:none;
-    background: #f1f1f1;
+    background: #beaeae;
     color: #000;
     position: relative;
     padding: 20px;
