@@ -2,7 +2,7 @@ let captcha;
 let alphabets = "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz";
 
 let status = document.getElementById('status');
-let previousColor; // Store previous color
+let previousColor; 
 
 status.innerText = "Captcha Generator";
 
@@ -19,20 +19,37 @@ function generate(){
     document.getElementById('generated-captcha').value = captcha;
     document.getElementById('entered-captcha').value = '';
     status.innerText = "Captcha Generator";
-    status.style.color = previousColor; // Restore previous color
+    status.style.color = '#654fe0'; 
 }
 
+
+
 function check() {
+    const correctGif = document.getElementById('correct-gif');
+    const wrongGif = document.getElementById('wrong-gif');
+
+
     let userValue = document.getElementById('entered-captcha').value;
 
     if (userValue === captcha) {
         status.innerText = "Correct!";
         status.style.color = 'green';
+        correct.play();
+        correctGif.style.display = 'inline'; 
+        setTimeout(() => {
+            generate();
+            correctGif.style.display = 'none'; 
+        }, 2000);  
     } else {
         previousColor = status.style.color;
-        status.innerText = "Try Again!!";
+        status.innerText = "Incorect captcha ";
         status.style.color = 'red';
-        setTimeout(generate, 2000); 
+        wrong.play();
+        wrongGif.style.display = 'inline';
+        setTimeout(() => {
+            generate();
+            wrongGif.style.display = 'none'; 
+        }, 2000); 
     }
 }
 
@@ -42,3 +59,22 @@ entered.addEventListener('keydown', function(event) {
         check();
     }
 });
+
+
+/////////////////////////////////////////////////////////
+
+// const btn1 = document.getElementById('btn1');
+// const correct = document.getElementById('correct');
+
+// btn1.addEventListener('click', ()=>{
+//     correct.play();
+// })
+
+// const btn2 = document.getElementById('btn1');
+// const wrong = document.getElementById('wrong');
+
+// btn2.addEventListener('click', ()=>{
+//     correct.play();
+// })
+
+

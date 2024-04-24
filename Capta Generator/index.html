@@ -6,12 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Capta Generator</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 
 <body onload="generate()">
     <div class="container">
         <!-- <h2>Captcha Generator</h2> -->
         <h2 id="status"></h2>
+            <img id="correct-gif" src="assets/happy.gif" alt="Correct GIF" style="display: none; width: 50px;">
+            <img id="wrong-gif" src="assets/confussed.gif" alt="wrong GIF" style="display: none; width: 50px; ">
+
         <div>
             <input type="text" readonly id="generated-captcha">
         </div>
@@ -19,9 +23,13 @@
             <input type="text" name="" id="entered-captcha" placeholder="Enter the captcha..">
         </div>
 
-        <button type="button" onclick="check()">Check</button>
-        <button type="button" onclick="generate()" id="gen">Genetrate New</button>
+        <button type="button" onclick="check()" id="btn1">Check</button>
+        <button type="button" onclick="generate()" id="btn2">Genetrate New</button>
     </div>
+
+    <audio src="assets/correct.mp3" id="correct"></audio>
+    <audio src="assets/wrong_audio.mp3" id="wrong"></audio>
+
     <script src="script.js"></script>
 </body>
 
