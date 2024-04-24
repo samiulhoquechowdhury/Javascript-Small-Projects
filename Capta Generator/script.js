@@ -26,7 +26,7 @@ function check(){
         status.innerText = "Correct!"
     } else {
         status.innerText = "Try Again!!"
-        document.getElementById('entered-captcha')
+        document.getElementById('entered-captcha').value = '';
 
     }
 }
