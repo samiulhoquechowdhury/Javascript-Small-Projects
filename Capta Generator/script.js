@@ -27,7 +27,6 @@ function check(){
     } else {
         status.innerText = "Try Again!!"
         document.getElementById('entered-captcha').value = '';
-
     }
 }
 
