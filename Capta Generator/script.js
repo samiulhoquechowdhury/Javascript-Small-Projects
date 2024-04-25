@@ -39,7 +39,7 @@ function check() {
         }, 2000);  
     } else {
         previousColor = status.style.color;
-        status.innerText = "Incorect captcha ";
+        status.innerText = "Incorect captcha";
         status.style.color = 'red';
         wrong.play();
         wrongGif.style.display = 'inline';
