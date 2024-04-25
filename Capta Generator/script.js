@@ -14,7 +14,7 @@ function generate(){
     let fifth = alphabets[Math.floor(Math.random() * alphabets.length)]
     let sixth = Math.floor(Math.random() * 10)
 
-    captcha = first.toString() + second.toString() + third.toString() + forth.toString() + fifth.toString() + sixth.toString()
+    captcha = first.toString() + second.toString() + third.toString() + forth.toString() + fifth.toString() + sixth.toString();
 
     document.getElementById('generated-captcha').value = captcha;
     document.getElementById('entered-captcha').value = '';
@@ -22,12 +22,9 @@ function generate(){
     status.style.color = '#654fe0'; 
 }
 
-
-
 function check() {
     const correctGif = document.getElementById('correct-gif');
     const wrongGif = document.getElementById('wrong-gif');
-
 
     let userValue = document.getElementById('entered-captcha').value;
 
@@ -61,20 +58,6 @@ entered.addEventListener('keydown', function(event) {
 });
 
 
-/////////////////////////////////////////////////////////
 
-// const btn1 = document.getElementById('btn1');
-// const correct = document.getElementById('correct');
-
-// btn1.addEventListener('click', ()=>{
-//     correct.play();
-// })
-
-// const btn2 = document.getElementById('btn1');
-// const wrong = document.getElementById('wrong');
-
-// btn2.addEventListener('click', ()=>{
-//     correct.play();
-// })
 
 
