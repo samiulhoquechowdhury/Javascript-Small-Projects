@@ -17,7 +17,9 @@ function generate(){
     captcha = first.toString() + second.toString() + third.toString() + forth.toString() + fifth.toString() + sixth.toString();
 
     document.getElementById('generated-captcha').value = captcha;
+
     document.getElementById('entered-captcha').value = '';
+    
     status.innerText = "Captcha Generator";
     status.style.color = '#654fe0'; 
 }
