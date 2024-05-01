@@ -62,6 +62,7 @@ function updateCurrentText() {
 //   return cards === null ? [] : cards;
 // }
 
+
 // function setCardsData(cards) {
 //   localStorage.setItem("cards", JSON.stringify(cards));
 //   history.go(0);
