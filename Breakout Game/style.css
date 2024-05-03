@@ -51,6 +51,7 @@ canvas {
   border-radius: 5px;
   font-family: inherit;
   font-size: 1rem;
+  box-shadow: 2px 2px 5px black;
 }
 
 .btn:focus {
@@ -62,7 +63,7 @@ canvas {
 }
 
 .btn:active {
-  transform: scale(0.98);
+  transform: scale(0.97);
 }
 
 .rules-btn {
