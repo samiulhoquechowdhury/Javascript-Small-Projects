@@ -1,3 +1,4 @@
+const heading = document.querySelector('h1')
 const rulesButton = document.getElementById("rules-btn");
 const closeButton = document.getElementById("close-btn");
 const rules = document.getElementById("rules");
@@ -156,7 +157,6 @@ function moveBall() {
 function increaseScore() {
   score++;
   if (score % (brickRowCount * brickRowCount) === 0) {
-    // no remainder
     showAllBricks();
   }
 }
@@ -186,10 +186,8 @@ function keyUp(e) {
 
 // Update Canvas
 function update() {
-  // update
   movePaddle();
   moveBall();
-  // draw
   draw();
   requestAnimationFrame(update);
 }
@@ -200,5 +198,4 @@ document.addEventListener("keyup", keyUp);
 rulesButton.addEventListener("click", () => rules.classList.add("show"));
 closeButton.addEventListener("click", () => rules.classList.remove("show"));
 
-// Init
 update();
