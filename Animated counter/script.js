@@ -1,26 +1,15 @@
+const counters = document.querySelectorAll(".counter");
 
-const counters = document.querySelectorAll('.counter');
-const speed = 1000;
-
-counters.forEach(counter => {
-    const updateCount = () => {
-        const target = +counter.getAttribute('data-target');
-        const count = +counter.innerText;
-
-
-        const animation = Math.ceil(target / speed);
-
-
-        if (count < target) {
-
-            counter.innerText = count + animation;
-
-            setTimeout(updateCount, 1);
-        } else {
-            counter.innerText = target;
-        }
-    };
-
-    updateCount();
+counters.forEach((counter) => {
+  counter.innerText = "0";
+  const updateCounter = () => {
+    const target = +counter.getAttribute("data-target");
+    const count = +counter.innerText;
+    const increment = target / 200;
+    if (count < target) {
+      counter.innerText = `${Math.ceil(count + increment)}`;
+      setTimeout(updateCounter, 1);
+    } else counter.innerText = target;
+  };
+  updateCounter();
 });
-
